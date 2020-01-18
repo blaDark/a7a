@@ -360,4 +360,4 @@ client.on("message", async message => {
 })
 
 
-client.login("NjE1NDQ4ODYzNzYyOTM5OTM1.XhUWng.fMfYd9nfrdJDr798IH5N_daFeaA")
+client.login("Token Your Bot")
