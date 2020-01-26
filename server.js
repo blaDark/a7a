@@ -6,7 +6,7 @@ const moment = require('moment');
 const ms = require('ms');
 const totime = require('to-time');
 const dbg = new Enmap({ name: 'Giveaway' });
-const prefix = '#';
+const prefix = '$';
 console.log("[ Giveaways is Lunched. ] - MoJRemGames");
 
 //////////////////
@@ -14,13 +14,7 @@ console.log("[ Giveaways is Lunched. ] - MoJRemGames");
 client.on('message',message => {
   if (message.author.bot) return;
   if (message.content === prefix+"help") {
-  message.channel.sendMessage(`**
-:gift: - Help Menu
-------------------
-:tada: | ``${prefix}start`` --> To Start a Giveaway.
-:tada: | ``${prefix}groll`` --> To Choose Another Winner.
-:tada: | ``${prefix}gend`` --> To End Giveaway.
- **`);
+  message.channel.sendMessage('**:gift: - Help Menu\n--------------------------\n:tada: | ``$start`` --> To Start a Giveaway.\n:tada: | ``$groll`` --> To Choose Another Winner.\n:tada: | ``${prefix}gend`` --> To End Giveaway.\n--------------------------**');
 }
 });
 
