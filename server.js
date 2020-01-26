@@ -14,7 +14,7 @@ console.log("[ Giveaways is Lunched. ] - MoJRemGames");
 client.on('message',message => {
   if (message.author.bot) return;
   if (message.content === prefix+"help") {
-  message.channel.sendMessage('**:gift: - Help Menu\n--------------------------\n:tada: | ``$start`` --> To Start a Giveaway.\n:tada: | ``$groll`` --> To Choose Another Winner.\n:tada: | ``${prefix}gend`` --> To End Giveaway.\n--------------------------**');
+  message.channel.sendMessage('**:gift: - Help Menu\n--------------------------\n:tada: | ``$start`` --> To Start a Giveaway.\n:tada: | ``$groll`` --> To Choose Another Winner.\n:tada: | ``$gend`` --> To End Giveaway.\n--------------------------**');
 }
 });
 
