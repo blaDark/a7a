@@ -6,8 +6,8 @@ const moment = require('moment');
 const ms = require('ms');
 const totime = require('to-time');
 const dbg = new Enmap({ name: 'Giveaway' });
-const prefix = '.';
-console.log("[ Giveaways is Lunched. ]");
+const prefix = '#';
+console.log("[ Giveaways is Lunched. ] - MoJRemGames");
 //gstart
 client.on("ready", async () => {
   await dbg.defer;
@@ -230,7 +230,7 @@ client.on("message", async message => {
             return message.channel.send(``);
           } else {
             msg.channel.send(
-              `> Congratulations ${rusers}! You won the **${args
+              `Congratulations ${rusers}! You won the **${args
                 .slice(3)
                 .join(" ")}**`
             );
@@ -247,7 +247,7 @@ client.on("message", async message => {
     ) {
       if (!args[1])
         return message.channel.send(
-          `**Usage:** **\`${prefix}reroll [giveaway message id]\`**`
+          `**Usage:** **\`${prefix}groll [giveaway message id]\`**`
         );
       if (isNaN(args[1])) return message.channel.send(`Thats not a message ID`);
       message.channel
@@ -292,7 +292,7 @@ client.on("message", async message => {
     ) {
       if (!args[1])
         return message.channel.send(
-          `**Usage:** **\`${prefix}reroll [giveaway message id]\`**`
+          `**Usage:** **\`${prefix}gend [giveaway message id]\`**`
         );
       if (isNaN(args[1])) return message.channel.send(`Thats not a message ID`);
       message.channel
@@ -342,7 +342,7 @@ client.on("message", async message => {
                   return message.channel.send(`No winners :rolling_eyes:`);
                 } else {
                   message.channel.send(
-                    `> Congratulations ${rusers}! You won the **${gv.gtext}**`
+                    `Congratulations ${rusers}! You won the **${gv.gtext}**`
                   );
                 }
                 await dbg.delete(
@@ -360,4 +360,10 @@ client.on("message", async message => {
 })
 
 
-client.login("Token Your Bot")
+client.login(process.env.BOT_TOKEN)
+
+/*
+
+- [       All Copy Right Reserved For: MoJRemGames/MG      ] -
+
+*/
