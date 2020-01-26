@@ -8,6 +8,23 @@ const totime = require('to-time');
 const dbg = new Enmap({ name: 'Giveaway' });
 const prefix = '#';
 console.log("[ Giveaways is Lunched. ] - MoJRemGames");
+
+//////////////////
+
+client.on('message',message => {
+  if (message.author.bot) return;
+  if (message.content === prefix+"help") {
+  message.channel.sendMessage(`**
+:gift: - Help Menu
+------------------
+:tada: | ``${prefix}start`` --> To Start a Giveaway.
+:tada: | ``${prefix}groll`` --> To Choose Another Winner.
+:tada: | ``${prefix}gend`` --> To End Giveaway.
+ **`);
+}
+});
+
+/////////////////
 //gstart
 client.on("ready", async () => {
   await dbg.defer;
