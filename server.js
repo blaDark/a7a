@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://Name-Project.glitch.me/`);
+  http.get(`http://giveawaybot009.glitch.me/`);
 }, 280000);
 
 //////////////////
@@ -19,7 +19,7 @@ const moment = require('moment');
 const ms = require('ms');
 const totime = require('to-time');
 const dbg = new Enmap({ name: 'Giveaway' });
-const prefix = '$';
+const prefix = 'D';
 console.log("[ Giveaways is Lunched. ] - MoJRemGames");
 
 //////////////////
