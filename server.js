@@ -19,7 +19,7 @@ const moment = require('moment');
 const ms = require('ms');
 const totime = require('to-time');
 const dbg = new Enmap({ name: 'Giveaway' });
-const prefix = 'D';
+const prefix = 'A';
 console.log("[ Giveaways is Lunched. ] - MoJRemGames");
 
 //////////////////
