@@ -19,15 +19,15 @@ const moment = require('moment');
 const ms = require('ms');
 const totime = require('to-time');
 const dbg = new Enmap({ name: 'Giveaway' });
-const prefix = 'A';
-console.log("[ Giveaways is Lunched. ] - MoJRemGames");
+const prefix = '$';
+console.log("[لقد بدأ السحب ! - Dark]");
 
 //////////////////
 
 client.on('message',message => {
   if (message.author.bot) return;
   if (message.content === prefix+"help") {
-  message.channel.sendMessage('**:gift: - Help Menu\n--------------------------\n:tada: | ``$start`` --> To Start a Giveaway.\n:tada: | ``$groll`` --> To Choose Another Winner.\n:tada: | ``$gend`` --> To End Giveaway.\n--------------------------**');
+  message.channel.sendMessage('**:gift: - قائمة \n--------------------------\n:tada: | ``$start`` --> To Start a Giveaway.\n:tada: | ``$groll`` --> To Choose Another Winner.\n:tada: | ``$gend`` --> To End Giveaway.\n--------------------------**');
 }
 });
 
