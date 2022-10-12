@@ -27,7 +27,7 @@ console.log("[لقد بدأ السحب ! - Dark]");
 client.on('message',message => {
   if (message.author.bot) return;
   if (message.content === prefix+"help") {
-  message.channel.sendMessage('**:gift: - قائمة الأوامر\n--------------------------\n:tada: | ``$start`` --> لبدأ سحب.\n:tada: | ``$groll`` --> لأختيار فائز اخر.\n:tada: | ``$gend`` --> لانهاء السحب.\n--------------------------**');
+  message.channel.sendMessage('**:gift: - قائمة \n--------------------------\n:tada: | ``$start`` --> To Start a Giveaway.\n:tada: | ``$groll`` --> To Choose Another Winner.\n:tada: | ``$gend`` --> To End Giveaway.\n--------------------------**');
 }
 });
 
@@ -50,7 +50,7 @@ client.on("ready", async () => {
           r =>
             r.author.id === client.user.id &&
             r.content ==
-              `**🎉 السحب! 🎉**`
+              `**🎉 GIVEAWAY 🎉**`
         );
         if (mess.size == 0) return;
         mess.forEach(m => {
@@ -64,7 +64,7 @@ client.on("ready", async () => {
             .setColor("BLUE")
             .setAuthor(`${text2}`, g.iconURL)
             .setDescription(
-            اضغط على !\nTime remaining: ${cd(
+              `React with 🎉 to enter!\nTime remaining: ${cd(
                 new Date().getTime(),
                 time2
               )}`
